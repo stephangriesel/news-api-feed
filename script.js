@@ -19,6 +19,15 @@ function newsfeed() {
       // Format
       var newsItem = response.data.articles[0].title;
       console.log(newsItem);
+      var newsItemOutput = `
+      <ul class="list-group">
+      <li class="list-group-item">${newsItem}</li>
+      </ul>
+      `;
+
+      // Output
+      document.getElementById('news-item').innerHTML = newsItemOutput;
+
     })
     .catch(function(error) {
       console.log(error);
