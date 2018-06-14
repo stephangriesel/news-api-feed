@@ -16,7 +16,7 @@ function newsfeed() {
         // Log response
       console.log(response.data);
 
-      // Format
+      // Title
       var newsItem = response.data.articles[0].title;
       console.log(newsItem);
       var newsItemOutput = `
@@ -25,8 +25,38 @@ function newsfeed() {
       </ul>
       `;
 
+      // Description
+      var newsDesc = response.data.articles[0].description;
+      console.log(newsDesc);
+      var newsDescOutput = `
+      <ul class="list-group">
+      <li class="list-group-item">${newsDesc}</li>
+      </ul>
+      `;
+
+      // Publish Date
+      var newsDate = response.data.articles[0].publishedAt;
+      console.log(newsDate);
+      var newsDateOutput = `
+      <ul class="list-group">
+      <li class="list-group-item">${newsDate}</li>
+      </ul>
+      `;
+
+      // Source
+      var newsSource = response.data.articles[0].url;
+      console.log(newsSource);
+      var newsSourceOutput = `
+      <ul class="list-group">
+      <li class="list-group-item">${newsSource}</li>
+      </ul>
+      `;
+
       // Output
       document.getElementById('news-item').innerHTML = newsItemOutput;
+      document.getElementById('news-desc').innerHTML = newsDescOutput;
+      document.getElementById('news-date').innerHTML = newsDateOutput;
+      document.getElementById('news-source').innerHTML = newsSourceOutput;
 
     })
     .catch(function(error) {

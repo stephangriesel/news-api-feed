@@ -50,3 +50,11 @@ h2  {
     font-family: 'Courier New', Courier, monospace;
     font-size: 12px;
 }
+
+#news-date {
+    font-size:20px;
+    font-weight:900;
+    text-align: center;
+    padding:20px;
+
+}
