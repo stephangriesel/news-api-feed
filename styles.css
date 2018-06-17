@@ -91,6 +91,8 @@ ul li {
     font-size:14px;
 }
 
-@media (min-width: 815px) {
-    
+@media (max-width: 800px) {
+    .wrapper {
+        width: 100%;
+    }
 }
