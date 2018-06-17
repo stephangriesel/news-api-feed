@@ -27,7 +27,7 @@ h2  {
     left:50%;
     transform: translate(-50%,-50%);
     position: absolute;
-    width:60%;
+    width:40%;
     height:auto;
     background-color:#FFFFFF;
     opacity: 0.9;
@@ -49,6 +49,7 @@ h2  {
     padding:5px 10px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 12px;
+    text-align: center;
 }
 
 #news-date {
@@ -57,4 +58,39 @@ h2  {
     text-align: center;
     padding:20px;
 
+}
+
+ul li {
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+
+.list-group {
+    margin:0;
+    padding: 0;
+}
+
+#news-item {
+    background: #dbdbdb;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size:40px;
+    font-weight: 900;
+    padding:10px;
+    text-transform: uppercase;
+    
+}
+
+#news-desc {
+    padding:20px;
+    font-size:32px;
+}
+
+#news-source {
+    font-size:14px;
+}
+
+@media (min-width: 815px) {
+    
 }

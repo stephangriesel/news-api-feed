@@ -48,7 +48,7 @@ function newsfeed() {
       console.log(newsSource);
       var newsSourceOutput = `
       <ul class="list-group">
-      <li class="list-group-item">${newsSource}</li>
+      <li class="list-group-item">Source: <a href="${newsSource}">${newsSource}</a></li>
       </ul>
       `;
 
